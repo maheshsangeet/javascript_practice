@@ -31,7 +31,8 @@
     <body>
         <p>Full stack software Engineer</p>
     <script>
-        // calculator 
+    
+// calculator 
         // let a= '123456789';
         // if (a.length <4) {
         //     console.log(a)
@@ -101,21 +102,21 @@
 
 
 
-        // prime number 
-        let n = 6; 
+ // prime number
 
-        nextPrime:
-        for (let i = 2; i <= n; i++) { // for each i...
-            console.log('outer'+i)
+            // let n = 6; 
+            // nextPrime:
+            // for (let i = 2; i <= n; i++) { 
+            //     console.log('outer'+i)
 
-        for (let j = 2; j < i; j++) { // look for a divisor..
-            if (i % j == 0) continue  nextPrime; // not a prime, go next i
-        console.log('inner'+j)
+            // for (let j = 2; j < i; j++) { 
+            //     if (i % j == 0) continue  nextPrime; 
+            // console.log('inner'+j)
 
-        }
+            // }
 
-        console.log( i ); // a prime
-        }
+            // console.log( i ); // a prime
+            // }
 
 
             // const low = parseInt(prompt('eneter lower number '));
@@ -153,20 +154,121 @@
             // }
 
 // logic 
+            // let input = parseInt(prompt('enter input', ''))
+            // let output = parseInt(prompt('enter output', ''))
 
-// let input = parseInt(prompt('enter input', ''))
-// let output = parseInt(prompt('enter output', ''))
+            // function foo (input,output) {
+            //     alert((input+output)-input)
+            // }
 
-// function foo (input,output) {
-//     alert((input+output)-input)
-// }
-
-// foo (input,output)
-
+            // foo (input,output)
 
 
+                
+// array clone or copy
 
+            // let a = [1,2,3,4,5];
+            // let b = a.slice();
+            // let c= [...a]
+            // alert(c)
+            // alert(b)
 
+// array destructuring
+            
+            // let a = [1,2,3];
+            // let b = ['one','two','three'];
+            // a=b;
+            // alert(a)
+
+// array concat
+            // let a = [1,2,3];
+            // let b = [4,5,6];
+            // let c = [7,8,9];
+            // let d = a.concat(b)
+            // alert(typeof d)
+            // let d = [1,2,3]+[4,5,6];
+            // alert(d)
+            //let e = a.concat(b,c)
+            //alert(e)
+
+//join method
+            // let a = [1,2,3,4];
+            // let b = a.join('+');
+            // alert(b)
+            // alert(typeof b)
+
+//indexof method
+            // let a = [1,2,3,1,5,6,1]
+            // alert(a.indexOf(1,1))
+        
+//sort method
+            // let a = ['a','bob','aa','cat','caaacc','aaaa'];
+            // let b = [1,5,6,2,11,33,15,7,63]
+            // let c = b.sort(foo)
+            // alert(b)
+            // alert(c)
+            // alert(typeof c)
+
+            // const names = ['tom', 'alex', 'bob','aabod'];
+
+            // let a = ['aa','ka','njj','ab','c','b','a']
+
+            //     function foo (a,b){
+            //         return a-b
+            //     }
+
+            // alert(names.sort())
+
+//filter method
+
+let students = [
+   {
+      'id': 001,
+      'f_name': 'Alex',
+      'l_name': 'B',
+      'gender': 'M',
+      'married': false,
+      'age': 22,
+      'paid': 250,  
+      'courses': ['JavaScript', 'React']
+   },
+   {
+      'id': 002,
+      'f_name': 'Ibrahim',
+      'l_name': 'M',
+      'gender': 'M',
+      'married': true,
+      'age': 32,
+      'paid': 150,  
+      'courses': ['JavaScript', 'PWA']
+   },
+   {
+      'id': 003,
+      'f_name': 'Rubi',
+      'l_name': 'S',
+      'gender': 'F',
+      'married': false,
+      'age': 27,
+      'paid': 350,  
+      'courses': ['Blogging', 'React', 'UX']
+   },
+   {
+      'id': 004,
+      'f_name': 'Zack',
+      'l_name': 'F',
+      'gender': 'F',
+      'married': true,
+      'age': 36,
+      'paid': 250,  
+      'courses': ['Git', 'React', 'Branding']
+   } 
+];
+
+const femaleStudents = students.filter((element, index) => {
+  return element.gender === 'F';
+})
+
+console.log(femaleStudents);
 
     </script>
 </body>
