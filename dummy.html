@@ -9,27 +9,46 @@
         html{
             font-size: 62.5%;
         }
-        p{
-            font-size:5rem;
-            text-align: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
         }
-         @media only screen and (max-width: 1024px) {
-                   html{
-                       font-size: 50%;
-                   }
-
+        /* clip path */
+        /* .text {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            text-transform: uppercase;
+            font-size: 5rem;
+            transition: .2s ease;
+            font-family: cursive;
         }
-        @media only screen and (max-width: 768px) {
-                   html{
-                       font-size: 30%;
-                   }
-
+        .text1 {
+            clip-path: polygon(0 0,100% 0,100% 100%,50% 0,0 100%);
         }
+        .text2 {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        .box:hover .text1{
+            transform: translateY(-10px);
+        }
+        .box:hover .text2{
+            transform: translateY(10px);
+        } */
     </style>
 </head>
 
     <body>
-        <p>Full stack software Engineer</p>
+        <!-- clip path -->
+        <!-- <div class="main-container">
+            <div class="box">
+                <p class="text text1">Mahesh</p>
+                <p class="text text2">Mahesh</p>
+            </div>
+        </div>         -->
+        <!-- clip path -->
+
     <script>
     
 // calculator 
@@ -221,54 +240,54 @@
 
 //filter method
 
-let students = [
-   {
-      'id': 001,
-      'f_name': 'Alex',
-      'l_name': 'B',
-      'gender': 'M',
-      'married': false,
-      'age': 22,
-      'paid': 250,  
-      'courses': ['JavaScript', 'React']
-   },
-   {
-      'id': 002,
-      'f_name': 'Ibrahim',
-      'l_name': 'M',
-      'gender': 'M',
-      'married': true,
-      'age': 32,
-      'paid': 150,  
-      'courses': ['JavaScript', 'PWA']
-   },
-   {
-      'id': 003,
-      'f_name': 'Rubi',
-      'l_name': 'S',
-      'gender': 'F',
-      'married': false,
-      'age': 27,
-      'paid': 350,  
-      'courses': ['Blogging', 'React', 'UX']
-   },
-   {
-      'id': 004,
-      'f_name': 'Zack',
-      'l_name': 'F',
-      'gender': 'F',
-      'married': true,
-      'age': 36,
-      'paid': 250,  
-      'courses': ['Git', 'React', 'Branding']
-   } 
-];
+// let students = [
+//    {
+//       'id': 001,
+//       'f_name': 'Alex',
+//       'l_name': 'B',
+//       'gender': 'M',
+//       'married': false,
+//       'age': 22,
+//       'paid': 250,  
+//       'courses': ['JavaScript', 'React']
+//    },
+//    {
+//       'id': 002,
+//       'f_name': 'Ibrahim',
+//       'l_name': 'M',
+//       'gender': 'M',
+//       'married': true,
+//       'age': 32,
+//       'paid': 150,  
+//       'courses': ['JavaScript', 'PWA']
+//    },
+//    {
+//       'id': 003,
+//       'f_name': 'Rubi',
+//       'l_name': 'S',
+//       'gender': 'F',
+//       'married': false,
+//       'age': 27,
+//       'paid': 350,  
+//       'courses': ['Blogging', 'React', 'UX']
+//    },
+//    {
+//       'id': 004,
+//       'f_name': 'Zack',
+//       'l_name': 'F',
+//       'gender': 'F',
+//       'married': true,
+//       'age': 36,
+//       'paid': 250,  
+//       'courses': ['Git', 'React', 'Branding']
+//    } 
+// ];
 
-const femaleStudents = students.filter((element, index) => {
-  return element.gender === 'F';
-})
+// const femaleStudents = students.filter((element, index) => {
+//   return element.gender === 'F';
+// })
 
-console.log(femaleStudents);
+// console.log(femaleStudents);
 
     </script>
 </body>
