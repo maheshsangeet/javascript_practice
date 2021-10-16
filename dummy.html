@@ -12,7 +12,8 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: 0;
+            box-sizing:border-box;
+
         }
         /* clip path */
         /* .text {
@@ -36,10 +37,60 @@
         .box:hover .text2{
             transform: translateY(10px);
         } */
+        /* .grid-container {
+            width: 100%;
+    height: 99vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1px;
+  background-color: #2196F3;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+.fadeOut {
+    opacity: 0;
+}
+.fadeIn{
+    opacity: 1;
+} */
+.main{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 10px solid black;
+
+}
+.b{
+    width: 220px;
+    height: 200px;
+    background-color: blue;
+}
     </style>
 </head>
 
     <body>
+        <div class="main">
+            <div class="box"></div>
+            <div class="b"></div>
+        </div>
         <!-- clip path -->
         <!-- <div class="main-container">
             <div class="box">
@@ -49,10 +100,38 @@
         </div>         -->
         <!-- clip path -->
 
-        <main id="app"></main>
-
+        <!-- <main id="app"></main> -->
+        <!-- <div id="main">
+            <h1>welcome</h1>
+            <button id="btn">click</button>
+        </div>
+        <div class="grid-container fadeOut" id="grid">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>  
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+            <div class="item7">7</div>
+          </div> -->
 
     <script>
+        // let main = document.getElementById('click');
+        // let grid = document.getElementById('grid');
+        // let btn = document.getElementById('btn');
+
+        // function foo () {
+        //     btn.addEventListener('click',()=>{
+        //         console.log('llllljj')
+        //         main.classList.add("fadeOut");
+
+        //         // main.classList.add('fadeOut')
+        //         // grid.classList.remove('fadeOut')
+
+        //     })
+        // }
+        // foo()
+
     
 // calculator 
         // let a= '123456789';
@@ -292,29 +371,72 @@
 
 // console.log(femaleStudents);
 
+//fetch data
+// function getData() {
+//   fetch("https://reqres.in/api/users")
+//     .then(res => {
+//       return res.json();
+//     })
+//     .then(json => {
+//       console.log('kk'+json.data);
+//       const html = json.data
+//         .map(function(item) {
+//           return "<p>" + item.first_name + " " + item.last_name + "</p>";
+//         })
+//         .join("");
+//       console.log('mmm'+html);
+//       document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
+//     })
+//     .catch(error => {
+//       console.log(error);
+//     });
+// }
 
-function getData() {
-  fetch("https://reqres.in/api/users")
-    .then(res => {
-      return res.json();
-    })
-    .then(json => {
-      console.log('kk'+json.data);
-      const html = json.data
-        .map(function(item) {
-          return "<p>" + item.first_name + " " + item.last_name + "</p>";
-        })
-        .join("");
-      console.log('mmm'+html);
-      document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-}
+// getData();
+// const current=document.querySelector('#current')
+//  console.log(current)
+ 
+ 
+// const imgs=document.querySelectorAll('.imgs')
+// const img=document.querySelectorAll('.imgs img')
 
-getData();
+// img.forEach((img)=>{
+//     img.addEventListener('click',imageClicked)
+// })
 
+// function imageClicked(e){
+//     current.src=e.target.src
+//     const selectedImage=e.target
+//     const preImg=document.querySelector('#selected')
+//     preImg.id=' '
+//     console.log(preImg)
+//     selectedImage.id='selected'
+// }
+
+
+
+// let radius = [11,25,3,41,0];
+// let arr = [{fn:'mahi',ln:'san',age:25},{fn:'dam',ln:'san',age:75},{fn:'ram',ln:'san',age:10}]
+
+// let out = arr.reduce((acc,curr)=> {
+//     if(curr<acc){
+//         return acc; 
+//     }
+// },30)
+
+// console.log(out)
+// function foo(){
+//     function goo() {
+//         var p= 52;
+
+
+//     }
+//     goo();
+//     console.log(p);
+
+// }
+
+// foo()
     </script>
 </body>
 </html>
