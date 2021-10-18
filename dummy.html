@@ -439,17 +439,32 @@
 // foo()
 
 // vowels check
-let inp = 'ramesh'
-let vowels = 'aeiou';
-let result = '';
+// let inp = 'ramesh'
+// let vowels = 'aeiou';
+// let result = '';
 
-for(let i=0; i<inp.length; i++){
+// for(let i=0; i<inp.length; i++){
  
-  if(vowels.includes(inp[i])){
-    result +=inp[i]
+//   if(vowels.includes(inp[i])){
+//     result +=inp[i]
+//   }
+// }
+// console.log(result)
+
+
+// firstNonRepeatedCharacter
+function firstNonRepeatedCharacter(string) {
+  for (var i = 0; i < string.length; i++) {
+    var c = string.charAt(i);
+    console.log(string.indexOf(c))
+    if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
+      return c;
+    }
   }
+  return null;
 }
-console.log(result)
+
+console.log(firstNonRepeatedCharacter('aarama'))
     </script>
 </body>
 </html>
