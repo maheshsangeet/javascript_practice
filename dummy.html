@@ -453,18 +453,37 @@
 
 
 // firstNonRepeatedCharacter
-function firstNonRepeatedCharacter(string) {
-  for (var i = 0; i < string.length; i++) {
-    var c = string.charAt(i);
-    console.log(string.indexOf(c))
-    if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
-      return c;
-    }
-  }
-  return null;
-}
+// function firstNonRepeatedCharacter(string) {
+//   for (var i = 0; i < string.length; i++) {
+//     var c = string.charAt(i);
+//     console.log(string.indexOf(c))
+//     if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
+//       return c;
+//     }
+//   }
+//   return null;
+// }
 
-console.log(firstNonRepeatedCharacter('aarama'))
+// console.log(firstNonRepeatedCharacter('aarama'))
+
+
+let input = 'daksha';
+let newStr = '';
+
+for (let i = 0; i < input.length; i++) {
+    let count = 0;
+    for (let j = 0; j < input.length; j++) {
+        if(input[i] === input[j]){
+            count++;
+        }
+    }
+    if(count == 1){
+        newStr += input[i];
+    }
+}
+console.log(newStr)
+
+
     </script>
 </body>
 </html>
